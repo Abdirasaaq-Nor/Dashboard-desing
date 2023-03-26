@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoto dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ............. font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <!-- ............ carrds .......... -->
+    <section>
+      <div class="main_cards">
+        <!-- ................. one card form  -->
+        <div class="one">
+          <div class="card_one_fle">
+            <div><h1>9526</h1></div>
+            <div>
+              <span class="cart_icon"><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+          <div class="container">
+            <div class="skills line"></div>
+          </div>
+          <div class="card_one">
+            <div><h4>Total orders</h4></div>
+            <div class="up_icons">
+              +4.4% <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ................. two card form  -->
+        <div class="two">
+          <div class="card_one_fle_2">
+            <div><h1>$8526</h1></div>
+            <div>
+              <span class="cart_icon_2"><h2>$</h2></span>
+            </div>
+          </div>
+          <div class="container_2">
+            <div class="skills_2 line_2"></div>
+          </div>
+          <div class="card_one_2">
+            <div><h4>Total orders</h4></div>
+            <div class="up_icons_2">
+              +2.4% <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ................. three card form  -->
+        <div class="three">
+          <div class="card_one_fle_3">
+            <div><h1>$3526</h1></div>
+            <div>
+              <span class="cart_icon_3"><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+          <div class="container_3">
+            <div class="skills_3 line_3"></div>
+          </div>
+          <div class="card_one_3">
+            <div><h4>Total orders</h4></div>
+            <div class="up_icons_3">
+              +1.4% <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ................. four card form  -->
+        <div class="four">
+          <div class="card_one_fle_4">
+            <div><h1>$3526</h1></div>
+            <div>
+              <span class="cart_icon_4"><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+          <div class="container_4">
+            <div class="skills_4 line_4"></div>
+          </div>
+          <div class="card_one_4">
+            <div><h4>Total orders</h4></div>
+            <div class="up_icons_4">
+              +5.4% <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ..................... section two ............ -->
+
+    <section>
+      <div class="main_section_2_flex">
+        <div class="sec_2_div_1">
+          <div class="div_1_flex">
+            <div><h4>Site Traffic</h4></div>
+            <div>
+              <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+
+          <!-- ...... charts starte here -->
+          <div class="charts_deisng">
+            <!-- Column Chart -->
+            <div id="columnChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#columnChart"), {
+                  series: [
+                    {
+                      name: "Net Profit",
+                      data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+                    },
+                    {
+                      name: "Revenue",
+                      data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+                    },
+                    {
+                      name: "Free Cash Flow",
+                      data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+                    },
+                  ],
+                  chart: {
+                    type: "bar",
+                    height: 350,
+                  },
+                  plotOptions: {
+                    bar: {
+                      horizontal: false,
+                      columnWidth: "55%",
+                      endingShape: "rounded",
+                    },
+                  },
+                  dataLabels: {
+                    enabled: false,
+                  },
+                  stroke: {
+                    show: true,
+                    width: 2,
+                    colors: ["transparent"],
+                  },
+                  xaxis: {
+                    categories: [
+                      "Feb",
+                      "Mar",
+                      "Apr",
+                      "May",
+                      "Jun",
+                      "Jul",
+                      "Aug",
+                      "Sep",
+                      "Oct",
+                    ],
+                  },
+                  yaxis: {
+                    title: {
+                      text: "$ (thousands)",
+                    },
+                  },
+                  fill: {
+                    opacity: 1,
+                  },
+                  tooltip: {
+                    y: {
+                      formatter: function (val) {
+                        return "$ " + val + " thousands";
+                      },
+                    },
+                  },
+                }).render();
+              });
+            </script>
+            <!-- End Column Chart -->
+          </div>
+          <!-- ...... charts end -->
+          <div class="sect_2_grid_3">
+            <div class="sect_2_grid_1">
+              <h2>45.4M</h2>
+              <div class="inside_sect_2_grid_1">
+                <h5 class="">Overal visitors</h5>
+                <span class="sect_2_icon"><i class="fa fa-facebook"></i></span>
+                <h5>2.4%</h5>
+              </div>
+            </div>
+
+            <!-- ............... grid two  -->
+            <div class="sect_2_grid_1">
+              <h2>15:48</h2>
+              <div class="inside_sect_2_grid_1">
+                <h5 class="">visitors Duration</h5>
+                <span class="sect_2_icon"><i class="fa fa-facebook"></i></span>
+                <h5>12.4%</h5>
+              </div>
+            </div>
+            <!-- .................. grid three -->
+            <div class="sect_2_grid_1">
+              <h2>45.4M</h2>
+              <div class="inside_sect_2_grid_1">
+                <h5 class="">Page/Visit</h5>
+                <span class="sect_2_icon"><i class="fa fa-facebook"></i></span>
+                <h5>5.4%</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .......... part two grid -->
+        <div class="sec_2_div_2">
+          <div class="sec_2_div_2_flex">
+            <div><h4>Weekly sales</h4></div>
+            <div>
+              <span><i class="fa fa-facebook"></i></span>
+            </div>
+          </div>
+          <!-- .. -->
+          <div class="image_chart"><img src="./images/jj.png" alt="" /></div>
+
+          <!-- .......... content .... -->
+          <div class="main_content">
+            <!-- .....conte 1 -->
+            <div class="content_1">
+              <div class="inside_content_1">
+                <span class="circle_"><i class="fa fa-circle"></i></span>
+                <h5>Direct</h5>
+              </div>
+              <h4>$4353</h4>
+              <h4>+44%</h4>
+            </div>
+
+            <span class="border_bottom"></span>
+
+            <!-- .....contne 2 -->
+            <div class="content_1">
+              <div class="inside_content_1">
+                <span class="circle_2"><i class="fa fa-circle"></i></span>
+                <h5>Affilite</h5>
+              </div>
+              <h4>$4353</h4>
+              <h4>+25%</h4>
+            </div>
+
+            <span class="border_bottom"></span>
+
+            <!-- ........ content 3 -->
+            <!-- .....contne 3 -->
+            <div class="content_1">
+              <div class="inside_content_1">
+                <span class="circle_3"><i class="fa fa-circle"></i></span>
+                <h5>Email</h5>
+              </div>
+              <h4>$4353</h4>
+              <h4>+25%</h4>
+            </div>
+
+            <span class="border_bottom"></span>
+            <!-- ............content 4 -->
+            <!-- .....contne 3 -->
+            <div class="content_1">
+              <div class="inside_content_1">
+                <span class="circle_4"><i class="fa fa-circle"></i></span>
+                <h5>Others</h5>
+              </div>
+              <h4>$4353</h4>
+              <h4>+25%</h4>
+            </div>
+
+            <!-- .........end content -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ....................... section three  -->
+
+    <section>
+      <div class="main_div_container">
+        <!-- .... card one  -->
+        <div class="div_one_main">
+          <div class="ui-widgets">
+            <div class="ui-values">85%</div>
+          </div>
+          <!-- ...two -->
+          <div class="text">
+            <h3>Facebook Followers</h3>
+            <div class="inside_text">
+              <h4>22.14%</h4>
+              <span><i class="fa fa-facebook"></i></span>
+              <h5>Since last</h5>
+            </div>
+            <h4 class="weak">Weak</h4>
+          </div>
+          <!-- text three -->
+          <div class="bb">
+            <span class="facebook"><i class="fa fa-facebook"></i></span>
+          </div>
+        </div>
+        <!-- ......................... card two -->
+        <div class="div_one_main">
+          <div class="ui-widgets_2">
+            <div class="ui-values_2">65%</div>
+          </div>
+          <!-- ...two -->
+          <div class="text">
+            <h3>Twitter Tweets</h3>
+            <div class="inside_text">
+              <h4>22.14%</h4>
+              <span><i class="fa fa-facebook"></i></span>
+              <h5>Since last</h5>
+            </div>
+            <h4 class="weak">Weak</h4>
+          </div>
+          <!-- text three -->
+          <div class="bb">
+            <span class="twitter"><i class="fa fa-twitter"></i></span>
+          </div>
+        </div>
+
+        <!-- ............. card thee -->
+        <div class="div_one_main">
+          <div class="ui-widgets_3">
+            <div class="ui-values_3">75%</div>
+          </div>
+          <!-- ...two -->
+          <div class="text">
+            <h3>
+              Youtube <br />
+              Subscribes
+            </h3>
+            <div class="inside_text">
+              <h4>75.14%</h4>
+              <span><i class="fa fa-facebook"></i></span>
+              <h5>Since last</h5>
+            </div>
+            <h4 class="weak">Weak</h4>
+          </div>
+          <!-- text three -->
+          <div class="bb">
+            <span class="youtube"><i class="fa fa-youtube-play"></i></span>
+          </div>
+        </div>
+
+        <!-- .........end card three -->
+      </div>
+    </section>
+
+    <!-- ................................... section four ...................... -->
+
+    <section>
+      <div class="main_section_4">
+        <!-- .............  card one -->
+        <div class="sec_3card_one">
+          <!-- ....... google earch -->
+          <h3>World selling reigion</h3>
+          <div class="image">
+            <img src="./images/chart5.png" alt="" />
+          </div>
+
+          <div class="sec3_card_1_flex">
+            <div class="country">
+              <h1>Counry</h1>
+            </div>
+            <div class="income">
+              <h1>Income</h1>
+            </div>
+            <div class="trend">
+              <h1>Trend</h1>
+            </div>
+          </div>
+          <span class="card_1_border"></span>
+          <!-- ..........one row  -->
+          <div class="card_1_flex_3">
+            <div class="counry_flg">
+              <img src="./images/chart2.png" alt="" />
+              <h4>Us</h4>
+            </div>
+            <div class="income__">
+              <h4>32,232</h4>
+            </div>
+            <div class="trend__">
+              <img src="./images/chart3.png" alt="" />
+            </div>
+          </div>
+          <span class="card_1_border"></span>
+          <!-- ......... seoncd row -->
+          <div class="card_1_flex_3">
+            <div class="counry_flg">
+              <img src="./images/chart2.png" alt="" />
+              <h4>UK</h4>
+            </div>
+            <div class="income__">
+              <h4>12,232</h4>
+            </div>
+            <div class="trend__">
+              <img src="./images/chart3.png" alt="" />
+            </div>
+          </div>
+          <span class="card_1_border"></span>
+          <!-- ......... seoncd three -->
+          <div class="card_1_flex_3">
+            <div class="counry_flg">
+              <img src="./images/chart2.png" alt="" />
+              <h4>UK</h4>
+            </div>
+            <div class="income__">
+              <h4>12,232</h4>
+            </div>
+            <div class="trend__">
+              <img src="./images/chart3.png" alt="" />
+            </div>
+          </div>
+          <span class="card_1_border"></span>
+          <!-- ......... seoncd four -->
+          <div class="card_1_flex_3">
+            <div class="counry_flg">
+              <img src="./images/chart2.png" alt="" />
+              <h4>UK</h4>
+            </div>
+            <div class="income__">
+              <h4>12,232</h4>
+            </div>
+            <div class="trend__">
+              <img src="./images/chart3.png" alt="" />
+            </div>
+          </div>
+
+          <!-- ......... end -->
+        </div>
+        <!-- .... card two -->
+        <div class="sec_3card_two">
+          <div class="main_inside_card_two">
+            <!-- ....... iinside card two card one 1 -->
+            <div class="inside_card_2_card_1">
+              <h3>Page views</h3>
+              <h5>8,767 <span class="small_">5.2%</span></h5>
+              <img src="./images/chart2.png" alt="" />
+            </div>
+
+            <!-- ....... iinside card two card two  -->
+            <div class="inside_card_2_card_1">
+              <h3>Total clicks</h3>
+              <h5>7,767 <span class="small_">5.2%</span></h5>
+              <img src="./images/chart3.png" alt="" />
+            </div>
+            <!-- ....... inside card two card three -->
+            <div class="inside_card_2_card_3">
+              <h3>Total Downloads</h3>
+
+              <div class="ui-widgets_sec_3">
+                <div class="ui-values_sec_3">4647</div>
+              </div>
+              <span class="border_bottom_sec_3"></span>
+              <h5 class="h_1_yesteday">3.4% since yersterday</h5>
+            </div>
+            <!-- ....... inside card two card four -->
+            <div class="inside_card_2_card_4">
+              <h3>Device Storage</h3>
+              <h1>42356/50000</h1>
+              <span class="border_bottom_sec_4"></span>
+              <h4>Total Downloads</h4>
+
+              <div class="container_sec_4">
+                <div class="skills_sec_4 line_sec_4"></div>
+              </div>
+
+              <h4>Image 10GB</h4>
+
+              <div class="container_sec_4_1">
+                <div class="skills_sec_4_1 line_sec_4_1"></div>
+              </div>
+
+              <div class="container_sec_4_2">
+                <div class="skills_sec_4_2 line_sec_4_2"></div>
+              </div>
+            </div>
+
+            <!-- .... end cards -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ................................................... section five ........................... -->
+    <section>
+      <div class="sec_5_main_div">
+        <!-- ....div one  -->
+        <div class="main_one_sec_5">
+          <div class="sec_5_content">
+            <h4>Total earning</h4>
+            <h1>$267,876</h1>
+            <h5>1.5% since last month</h5>
+          </div>
+          <span class="sec__5_borderBottem"></span>
+          <div class="sec_5_content">
+            <h4>Total Sales</h4>
+            <h1>$67,876</h1>
+            <h5>5.5% since last month</h5>
+          </div>
+          <div class="sec5_img">
+            <img src="./images/chart7.png" alt="" />
+          </div>
+        </div>
+        <!-- ....... div two -->
+        <div class="main_two_sec_5">
+          <div class="main_two_sec_5_flex">
+            <h4>Custom preview</h4>
+            <span><i class="fa fa-facebook"></i></span>
+          </div>
+          <!-- .............................. one row content -->
+          <span class="sec__5_borderBottem_2"></span>
+          <div class="main_two_content_sec_5">
+            <!-- ........ left side -->
+            <div class="part_one">
+              <div class="part_one_flex">
+                <div class="image_part_one">
+                  <img src="./images/img1.png" alt="" />
+                </div>
+                <div class="part_one_fleX_col">
+                  <h3>Iphone x 08:34 AM</h3>
+                  <p>Sara john: this is very nice phone in low badget</p>
+                </div>
+              </div>
+            </div>
+            <!-- .... right side -->
+            <div class="part_two">
+              <div class="starts">
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ..................... second row content -->
+          <span class="sec__5_borderBottem_2"></span>
+          <div class="main_two_content_sec_5">
+            <!-- ........ left side -->
+            <div class="part_one">
+              <div class="part_one_flex">
+                <div class="image_part_one">
+                  <img src="./images/img2.png" alt="" />
+                </div>
+                <div class="part_one_fleX_col">
+                  <h3>Air pod 05:34 AM</h3>
+                  <p>Sara john: this is very nice phone in low badget</p>
+                </div>
+              </div>
+            </div>
+            <!-- .... right side -->
+            <div class="part_two">
+              <div class="starts">
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ..................... third row content -->
+          <span class="sec__5_borderBottem_2"></span>
+          <div class="main_two_content_sec_5">
+            <!-- ........ left side -->
+            <div class="part_one">
+              <div class="part_one_flex">
+                <div class="image_part_one">
+                  <img src="./images/img3.png" alt="" />
+                </div>
+                <div class="part_one_fleX_col">
+                  <h3>Mac Book pro 08:34 AM</h3>
+                  <p>Sara john: this is very nice phone in low badget</p>
+                </div>
+              </div>
+            </div>
+            <!-- .... right side -->
+            <div class="part_two">
+              <div class="starts">
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ...................   four row content  -->
+          <span class="sec__5_borderBottem_2"></span>
+          <div class="main_two_content_sec_5">
+            <!-- ........ left side -->
+            <div class="part_one">
+              <div class="part_one_flex">
+                <div class="image_part_one">
+                  <img src="./images/img4.png" alt="" />
+                </div>
+                <div class="part_one_fleX_col">
+                  <h3>Air Pod 08:34 AM</h3>
+                  <p>Sara john: this is very nice phone in low badget</p>
+                </div>
+              </div>
+            </div>
+            <!-- .... right side -->
+            <div class="part_two">
+              <div class="starts">
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ......................... five row content -->
+          <span class="sec__5_borderBottem_2"></span>
+          <div class="main_two_content_sec_5">
+            <!-- ........ left side -->
+            <div class="part_one">
+              <div class="part_one_flex">
+                <div class="image_part_one">
+                  <img src="./images/img1.png" alt="" />
+                </div>
+                <div class="part_one_fleX_col">
+                  <h3>MacBook 08:34 AM</h3>
+                  <p>Sara john: this is very nice phone in low badget</p>
+                </div>
+              </div>
+            </div>
+            <!-- .... right side -->
+            <div class="part_two">
+              <div class="starts">
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span class="star_1"><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ......... five row end here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ............................ section 6 ........................ -->
+
+    <section class="sec6_main">
+      <div class="main_section_6">
+        <div class="summry_order">
+          <h3>Orders summary</h3>
+          <span><i class="fa fa-ellipsis-h"></i></span>
+        </div>
+        <span class="sec_6_borer_bottom"></span>
+
+
+  <div class="table_order">
+        <table>
+          <tr>
+            <th>Order id</th>
+            <th>Product</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+          <span class="table_border_bottom"></span>
+          <!-- ...................... one row data -->
+          <tr>
+            <td>#88657</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/shoe.png" alt="" />
+                <h5>Light blue chair</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="inProgress">in Progress</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+
+          
+          <!-- ............... second row data............... -->
+          <tr>
+            <td>#99657</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/sho1.png" alt="" />
+                <h5>Green sports shoes</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="incomplited">in completed</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+
+          <!-- .............. third row of data.................... -->
+          <tr>
+            <td>#12424</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/she3.png" alt="" />
+                <h5>Red headphone 07</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="incanceled">in canceled</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+
+          <!-- .............. four row of data.................... -->
+          <tr>
+            <td>#33424</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/shoe4.png" alt="" />
+                <h5>Mini Laptop</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="incomplited">in completed</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+           <!-- ...................... five row data -->
+          <tr>
+            <td>#918657</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/she6.png" alt="" />
+                <h5>Purple mobile phone</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="inProgress">in Progress</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+  <!-- .............. six row of data.................... -->
+          <tr>
+            <td>#33424</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/shoe7.png" alt="" />
+                <h5>smart hand watch</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="incomplited">in completed</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+
+          
+          <!-- .............. seven row of data.................... -->
+          <tr>
+            <td>#33424</td>
+            <td>
+              <div class="product_sec_6">
+                <img src="./images/tshirt.png" alt="" />
+                <h5>T-shirt blue</h5>
+              </div>
+            </td>
+            <td>Ali Nur</td>
+            <td>12 jul 2020</td>
+            <td>$64.5</td>
+            <td><button class="incomplited">in completed</button></td>
+            <td>
+              <div class="table_icon">
+                <span class="facog"><i class="fa fa-cog"></i></span>
+                <span class="table_arrow_down"
+                  ><i class="fa fa-arrow-down"></i
+                ></span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
