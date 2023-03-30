@@ -6,10 +6,14 @@
 
 body {
   font-family: sans-serif;
-
 }
 
 /* ........................... section one cards section ......... */
+.arrow_up{
+  color: rgb(179, 179, 179);
+  font-size: 10px;
+}
+
 .main_cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -357,7 +361,12 @@ body {
 .inside_text span,
 h5 {
   margin-left: 10px;
+  margin-top: 16px;
 }
+/* .inside_text h5 {
+  margin-top: 10px;
+  color: red;
+} */
 .bb {
   display: flex;
   justify-content: center;
@@ -844,9 +853,7 @@ h4 {
   width: 1000px;
   height: 700px;
   margin: 20px 10px 20px 20px;
-
 }
-
 
 .summry_order {
   display: flex;
@@ -878,7 +885,6 @@ table tr td {
   color: rgb(72, 72, 72);
   margin: 30px 0px 20px 0px;
   border-bottom: 1px solid rgb(225, 225, 225);
-  
 }
 
 .product_sec_6 {
@@ -923,7 +929,6 @@ table td:nth-child(2) {
 }
 table td {
   color: gray;
- 
 }
 .table_icon {
   display: flex;
@@ -942,14 +947,14 @@ table td {
   margin-left: 2px;
   color: #2b2a2a;
 }
-.table_order{
+.table_order {
   width: 100%;
 }
 /* .......................................... ................................................media query for mobile ............... */
 @media only screen and (max-width: 600px) {
-  body{
-                overflow-x: hidden;
-        }
+  body {
+    overflow-x: hidden;
+  }
   .main_cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1116,19 +1121,14 @@ table td {
   .table_order {
     overflow-x: scroll;
     width: 400px;
- 
-  
   }
   .main_section_6 {
-  background-color: white;
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
-  width: 1000px;
-  height: 800px;
-  margin: 20px 10px 30px 20px;
-
-}
-  
-  
+    background-color: white;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+    width: 1000px;
+    height: 800px;
+    margin: 20px 10px 30px 20px;
+  }
 }
 
 /* ................................................................ media query for big mobile ........ */
@@ -1313,22 +1313,18 @@ table td {
     width: 490px;
     height: 200px;
   }
-    /* .......................... section 6 .................... */
+  /* .......................... section 6 .................... */
   .table_order {
     overflow-x: scroll;
     width: 800px;
- 
-  
   }
   .main_section_6 {
-  background-color: white;
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
-  width: 1000px;
-  height: 800px;
-  margin: 20px 10px 30px 20px;
-
-}
-  
+    background-color: white;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+    width: 1000px;
+    height: 800px;
+    margin: 20px 10px 30px 20px;
+  }
 }
 
 /* ............................. media query for tablet  */
