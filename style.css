@@ -9,7 +9,7 @@ body {
 }
 
 /* ........................... section one cards section ......... */
-.arrow_up{
+.arrow_up {
   color: rgb(179, 179, 179);
   font-size: 10px;
 }
@@ -851,7 +851,7 @@ h4 {
   background-color: white;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
   width: 1000px;
-  height: 700px;
+  height: 770px;
   margin: 20px 10px 20px 20px;
 }
 
@@ -1096,6 +1096,7 @@ table td {
     margin-left: 20px;
     margin-bottom: 20px;
   }
+
   .main_two_sec_5 {
     background-color: white;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
@@ -1126,7 +1127,7 @@ table td {
     background-color: white;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
     width: 1000px;
-    height: 800px;
+    height: 880px;
     margin: 20px 10px 30px 20px;
   }
 }
@@ -1322,7 +1323,7 @@ table td {
     background-color: white;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 1px 2px 0 rgba(0, 0, 0, 0.11);
     width: 1000px;
-    height: 800px;
+    height: 890px;
     margin: 20px 10px 30px 20px;
   }
 }
